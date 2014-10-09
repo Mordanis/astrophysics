@@ -8,7 +8,7 @@
 !all units are mks unless a _other_unit comes after the variable
 
 PROGRAM boltzmann
-
+IMPLICIT NONE
 !First we'll define the constant
     Real*8, Parameter :: k_eV = 8.61734315d-5
 

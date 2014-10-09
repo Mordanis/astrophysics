@@ -4,3 +4,4 @@
 !let me die
 
 FUNCTION z_func(
+IMPLICIT NONE

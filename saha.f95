@@ -11,7 +11,7 @@
 Include 'f_saha.f95'
 
 PROGRAM saha
-
+IMPLICIT NONE
 !we'll define and get the values
 !for the right hand side of the equation
 

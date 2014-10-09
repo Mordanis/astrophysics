@@ -14,6 +14,7 @@
 !pi
 
 FUNCTION f_saha(zI, zII, Pe, temp, chi)
+IMPLICIT NONE
 
     Real*8             :: zI, zII, Pe, temp, chi
 
