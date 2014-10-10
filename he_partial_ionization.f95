@@ -5,7 +5,9 @@ INCLUDE 'f_saha.f95'
 !file that finds the ratio of ionization states
 PROGRAM partial_ionization
 IMPLICIT NONE
-
+    
+    Real*8            :: f_saha
+    
     Real*8, Parameter :: zI     = 1
     Real*8, Parameter :: zII    = 2
     Real*8, Parameter :: zIII   = 3
