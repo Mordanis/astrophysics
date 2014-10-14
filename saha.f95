@@ -14,7 +14,7 @@ PROGRAM saha
 IMPLICIT NONE
 !we'll define and get the values
 !for the right hand side of the equation
-
+    Real*8 :: f_saha
     Real*8 :: chi
     Real*8 :: zI
     Real*8 :: zII

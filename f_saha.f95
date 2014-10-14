@@ -16,7 +16,7 @@
 FUNCTION f_saha(zI, zII, Pe, temp, chi)
 IMPLICIT NONE
 
-    Real*8             :: zI, zII, Pe, temp, chi
+    Real*8             :: zI, zII, Pe, temp, chi, f_saha
 
     Real*8, Parameter  :: pi = 3.1415926535d0
     Real*8, Parameter  :: me = 9.1093821545d-31
