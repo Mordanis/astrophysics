@@ -1,4 +1,4 @@
-PROGRAM get_vals
+SUBROUTINE get_vals
 
    Implicit None
    Real*8      :: mass
@@ -17,4 +17,4 @@ PROGRAM get_vals
 
    write(*,*) "Enter the percent by mass of metals"
    read(*,*) metals_mass
-END PROGRAM get_vals
+END SUBROUTINE get_vals

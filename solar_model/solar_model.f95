@@ -9,10 +9,6 @@
 PROGRAM solar_model
 
    Implicit None
-   Include 'solar_getvals.f95'
-   Use get_vals
-
-
    Call get_vals
 
 END PROGRAM solar_model
