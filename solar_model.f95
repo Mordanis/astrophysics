@@ -6,11 +6,13 @@
 !This file will only call other files
 !My goal is to make this model as quick
 !as the one included in Carrol & Ostlie
+
+Include 'solar_getvals.mod'
 PROGRAM solar_model
 
    Implicit None
-   Include 'solar_getvals.f95'
-   Use get_vals
+!   Include 'solar_getvals.f95'
+   Use solar_getvals.mod
 
 
    Call get_vals
