@@ -1,4 +1,4 @@
-SUBROUTINE get_vals
+SUBROUTINE get_vals(mass, h_mass, he_mass, metals_mass)
 
    Implicit None
    Real*8      :: mass
@@ -8,6 +8,7 @@ SUBROUTINE get_vals
    
    write(*,*) "Enter the mass of the star in solar masses"
    read(*,*) mass
+   write(*,*) mass
 
    write(*,*) "Enter the percent by mass of Hydrogen"
    read(*,*) h_mass
