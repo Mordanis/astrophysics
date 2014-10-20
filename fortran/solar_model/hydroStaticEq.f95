@@ -3,7 +3,7 @@ Real*8 FUNCTION hydroStaticEq(r_step, density, g )
 !Of the equation of Hydrostatic Equilibrium
 !Equation
 
-   Real*8 ::r_step,` density, g, p_step
+   Real*8 ::r_step, density, g, p_step
    p_step = -1 * density * g * r_step
    hydroStaticEq = p_step
 
