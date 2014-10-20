@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
    // Variables for temperature array
    const int num_steps = 1e4;
    const int min_temp = 5e3;
-   int temp[num_steps]; //10,000 K to 20,000 K
+   int temp = min_temp; //5,000 K to 15,000 K
    int i = 0;
 
    // Physical constants
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
    const double pi       = 3.1415926535897932384626433832795028841971693993751;
 
    // Variables for calculating the ratio
-   double ratio_2_1[num_steps];
+   double ratio_2_1;
    double first_part;
    double second_part;
    double third_part;
@@ -54,19 +54,18 @@ int main(int argc, char *argv[])
 
    printf("%s", "Please enter the electron pressure in N/m^2\n");
    scanf("%f", &p_e);
-   printf("%f", p_e);
 
 
    // Loop over indices
 
    while(i < num_steps)
    {
-      temp[i] = min_temp + i;
-      first_part = 2 * k_boltz * temp[i] * Z_II / (p_e * Z_I);
-      second_part = pow(2 * pi * m_electron * k_boltz * temp[i] / (h_planck * h_planck) , 1.5);
-      third_part = exp(-chi / (k_eV * temp[i]));
-      ratio_2_1[i] = first_part * second_part * third_part;
-      fprintf(output_file, "%d\t\t%lf\n", temp[i], ratio_2_1[i]);
+      temp += i;
+      first_part = 2 * k_boltz * temp * Z_II / (p_e * Z_I);
+      second_part = pow(2 * pi * m_electron * k_boltz * temp / (h_planck * h_planck) , 1.5);
+      third_part = exp(-chi / (k_eV * temp));
+      ratio_2_1 = first_part * second_part * third_part;
+      fprintf(output_file, "%d\t\t%lf\n", temp, ratio_2_1);
       i++;
    }
 
