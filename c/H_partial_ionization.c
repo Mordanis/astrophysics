@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
    while(i < num_steps)
    {
-      temp += i;
+      temp += 1;
       first_part = 2 * k_boltz * temp * Z_II / (p_e * Z_I);
       second_part = pow(2 * pi * m_electron * k_boltz * temp / (h_planck * h_planck) , 1.5);
       third_part = exp(-chi / (k_eV * temp));
