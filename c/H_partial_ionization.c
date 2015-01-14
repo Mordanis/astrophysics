@@ -69,6 +69,8 @@ int main(int argc, char *argv[])
       i++;
    }
 
+   printf("%s\n", "The output is in a file called partial_ionization.dat");
+
    return 0;
 
 }

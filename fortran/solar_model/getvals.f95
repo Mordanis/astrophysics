@@ -20,6 +20,5 @@ SUBROUTINE get_vals(mass, h_mass, he_mass, metals_mass)
    write(*,*) "Enter the percent by mass of Helium"
    read(*,*) he_mass
 
-   write(*,*) "Enter the percent by mass of metals"
-   read(*,*) metals_mass
+   metals_mass = 1 - h_mass - he_mass
 END SUBROUTINE get_vals

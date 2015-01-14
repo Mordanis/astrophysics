@@ -6,5 +6,6 @@ Real*8 FUNCTION hydroStaticEq(r_step, density, g )
    Real*8 ::r_step, density, g, p_step
    p_step = -1 * density * g * r_step
    hydroStaticEq = p_step
+   Return
 
 END FUNCTION hydroStaticEq

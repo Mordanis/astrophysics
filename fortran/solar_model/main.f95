@@ -7,17 +7,19 @@
 !My goal is to make this model as quick
 !as the one included in Carrol & Ostlie
 
-Include 'solar_getvals.mod'
+Include 'getvals.f95'
+Include 'hydroStaticEq.f95'
+Include 'idealGas.f95'
+Include 'mass_cons.f95'
+
+
 PROGRAM solar_model
 
    Implicit None
-<<<<<<< HEAD:solar_model.f95
-!   Include 'solar_getvals.f95'
-   Use solar_getvals.mod
-=======
+
    Real*8 :: mass, h_mass, he_mass, metals_mass
    Call get_vals(mass, h_mass, he_mass, metals_mass)
->>>>>>> 19d25b6ef27aa118814d3de42a561bae1c13da3b:solar_model/main.f95
 
+   write(*,*) mass, h_mass, he_mass, metals_mass
 
 END PROGRAM solar_model
