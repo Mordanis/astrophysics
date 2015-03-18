@@ -4,3 +4,10 @@
 #define abs_zero_c     -273.15
 #define fine_struct    7.297352569824e-3
 #define c_light        299792458
+#define J_to_eV        1.60217656535e-19
+#define kg_to_amu      1.660538921e-27
+#define n_avogadro     6.02214112927e23
+#define big_G          6.6738480e-11
+#define permitivity    8.8541878176e-12
+#define q_elementary   1.60217656535e-19
+#define permeability   1.2566370614e-6
