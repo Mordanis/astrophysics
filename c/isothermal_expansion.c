@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "thermo_constants.h"
-
+// this is a comment
 int main(int argc, char *argv[] )
 {
     float pressure, volume, temp, num_particles;
