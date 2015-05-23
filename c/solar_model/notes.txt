@@ -1,0 +1,19 @@
+The constants used in this simulation are defined in constants.h
+
+This will be a relatively standard solar model.
+The numerical integration will be done with Euler's method
+This will, at least initially, model a homogenous ZAMS star
+The mass will be taken as an argument
+The composition will be taken from settings.h
+    the user is free to edit settings.h for desired simulation
+
+The simulation will primarily be done by numerically
+integrating 4 equations:
+    hydrostatic equilibrium
+    mass continuity
+    energy generation
+    dT/dr via radiation & convection
+
+The temperature at the boundary (well outside the star itself)
+    will be zero. This is not a good assumption, except that there is so
+    little mass that it will be able to change very rapidly
